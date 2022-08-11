@@ -1,2 +1,3 @@
 # Sass-Freelancer-Site
 Sass website template for freelancers developers , designers etc...
+Used jquery for animations , lightbox and carousel
