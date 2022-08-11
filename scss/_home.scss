@@ -1,0 +1,82 @@
+#home {
+  // home section-a
+  &__a {
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+      margin-bottom: 2.5rem;
+      i {
+        color: $primary-color;
+        padding-bottom: 0.5rem;
+      }
+    }
+  }
+
+  //home section-b
+  &__b {
+    .profile {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+
+      li {
+        &.title {
+          font-size: 1.5rem;
+        }
+        &.number {
+          font-size: 2rem;
+          font-weight: bold;
+        }
+      }
+
+      div {
+        padding: 3rem 0;
+        background-color: $medium-color;
+        &:nth-child(odd) {
+          background-color: $light-color;
+        }
+      }
+    }
+  }
+
+  //home section-c
+  &__c {
+    .process {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+      text-align: center;
+
+      &__step {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 25px;
+        background-color: $primary-color;
+        border-radius: 50%;
+        line-height: 15px;
+        padding: 1rem;
+        transition: all 0.3s;
+      }
+
+      &__icon {
+        position: relative;
+        width: 125px;
+        height: 125px;
+        border-radius: 50%;
+        background-color: $dark-color;
+        color: #fff;
+        padding: 2rem;
+        text-align: center;
+        transition: all 0.5s;
+
+        &:hover {
+          background-color: $primary-color;
+          .process__step {
+            background-color: $dark-color;
+          }
+        }
+      }
+    }
+  }
+}

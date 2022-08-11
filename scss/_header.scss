@@ -1,0 +1,74 @@
+//main-nav
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+
+  .logo_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-7px);
+    gap: 1rem;
+    .open-s span {
+      font-size: 0.7rem;
+    }
+  }
+
+  &__logo {
+    // main-nav__logo
+    display: block;
+    width: 4.2rem;
+    height: 4.2rem;
+  }
+
+  &__items {
+    //main-nav__items
+    display: flex;
+    li {
+      padding: 1rem 1.5rem;
+      a {
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+        border-bottom: 3px transparent solid;
+        padding-bottom: 0.5rem;
+        transition: border-color 0.5s;
+        &:hover {
+          border-color: $medium-color;
+        }
+        &.active {
+          border-color: $primary-color;
+        }
+      }
+    }
+  }
+}
+#header {
+  &__home {
+    // #header id and __home which will change over pages
+    background: $bg-image no-repeat center right/cover;
+    background-attachment: fixed;
+    height: 100vh;
+    color: #fff;
+
+    .header-content {
+      text-align: center;
+      padding-top: 15%;
+    }
+
+    h1 {
+      font-size: 4rem;
+      line-height: 1.2;
+    }
+    .typewrite {
+      display: block;
+    }
+  } // for about page header
+  &__inner {
+    background: $bg-image no-repeat 40% 20% / cover;
+    height: 5.5rem;
+    color: #fff;
+    border-bottom: 3px solid $primary-color;
+  }
+}
