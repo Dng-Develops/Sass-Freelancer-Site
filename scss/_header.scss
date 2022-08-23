@@ -57,6 +57,17 @@
       padding-top: 15%;
     }
 
+    .header-btn-container {
+      margin-top: 5rem;
+    }
+    .view-btn {
+    }
+
+    .download-btn:hover {
+      background: $light-color;
+      color: $primary-color;
+    }
+
     h1 {
       font-size: 4rem;
       line-height: 1.2;
