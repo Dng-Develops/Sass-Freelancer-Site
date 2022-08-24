@@ -58,9 +58,10 @@
     }
 
     .header-btn-container {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
       margin-top: 5rem;
-    }
-    .view-btn {
     }
 
     .download-btn:hover {

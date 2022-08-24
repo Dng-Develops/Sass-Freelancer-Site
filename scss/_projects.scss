@@ -24,5 +24,12 @@
     &:hover::after {
       transform: scale(2) translateX(-52%) translateY(-52%) rotate(45deg);
     }
+    // .item__image {
+    //   a {
+    //     img {
+    //       object-fit: fill;
+    //     }
+    //   }
+    // }
   }
 }
